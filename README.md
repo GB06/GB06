@@ -1,3 +1,1 @@
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=GB06&show_icons=true&include_all_commits=true&theme=material-palenight&count_private=true" alt="GB06 github stats" />
-</a>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=GB06&hide_rank=false&show_owner=true&show_icons=true&count_private=true&theme=dark)](https://github.com/GB06)
