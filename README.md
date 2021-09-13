@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Gabriel</h1>
 <h3 align="center">A passionate backend developer from Malaysia</h3>
 
-- 🌱 I’m currently learning **Golang, CSS, JS, Swift**
+- 🌱 I’m currently learning **Golang, CSS, JS, Swift and Unity**
 
 - 📫 How to reach me **gabrieltsen0831@gmail.com**
 
