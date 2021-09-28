@@ -5,7 +5,7 @@
 
 - 📫 How to reach me **gabrieltsen0831@gmail.com**
 
-- ⚡ Fun fact **I can type 100 WPM on average (PB 124 WPM)**
+- ⚡ Fun fact **I can type 100 WPM on average (PB 125 WPM)**
 
 
 <h3 align="left">Languages and Tools:</h3>
