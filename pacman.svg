@@ -1,0 +1,36 @@
+name: Generate Pac‑Man animation
+
+on:
+  schedule:
+    # every 12 hours at minute 0
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      # 1. Clone your repo so that gh-pages action can commit
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Generate the Pac‑Man SVG into the default `dist/` folder
+      - name: Generate pacman-contribution-graph.svg
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}    ## your username  [oai_citation:0‡abozanona.github.io](https://abozanona.github.io/pacman-contribution-graph/)
+
+      # 3. Push whatever’s in dist/ up to the `output` branch
+      - name: Deploy to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          ## needed for write access  [oai_citation:1‡DEV Community](https://dev.to/abozanona/elevate-your-github-profile-with-a-custom-pac-man-contribution-graph-1l27?utm_source=chatgpt.com)
